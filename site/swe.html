@@ -1,0 +1,14 @@
+<h2>Google's SWE book</h2>
+
+Google has put out a book of their software engineering practices online.
+Here are some of my notes on it.
+<p>
+For software to be sustainable it must be able to change.
+The most common change is upgrading dependencies.
+Hyrum's Law: Any observable behaviour will be depended on.
+So even "backward's compatible changes" can cause breakage.
+You cannot avoid change though so embrace it.
+Have teams that change dependencies be the ones who upgrade other people's code.
+Any infrastructure change that does not trigger a CI test failure is valid.
+If it causes real world breakage, then there should have been a test covering it.
+The more you do change infrastructure, the easier it becomes.
